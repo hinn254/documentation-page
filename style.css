@@ -142,6 +142,8 @@ footer {
 .footer-wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-d img {
@@ -150,7 +152,7 @@ footer {
   margin-left: 10px;
 }
 
-.footer-wrap div {
+.footer-wrap > div {
   flex: 1;
 }
 
