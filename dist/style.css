@@ -150,7 +150,7 @@ footer {
   margin-left: 10px;
 }
 
-.footer-wrap div {
+.footer-wrap > div {
   flex: 1;
 }
 
