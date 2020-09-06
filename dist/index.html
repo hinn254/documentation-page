@@ -31,139 +31,181 @@
               <h3>Documentation</h3>
               <hr />
               <p>
-                In imperdiet dolor eu dignissim consectetur. Donec venenatis
-                orci eget elementum maximus. Etiam rutrum porttitor turpis quis
-                sollicitudin. Sed non odio turpis. Curabitur pretium arcu ex, et
-                viverra erat viverra id. Nulla accumsan arcu felis, sed varius
-                leo consequat sit amet. Donec commodo aliquam nulla in semper.
-                Fusce vestibulum erat ut auctor vestibulum. In rutrum leo id mi
-                viverra ultrices. Cras malesuada est lectus, sed aliquam augue
-                suscipit id. Duis et egestas neque. Vestibulum eu sem dolor.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Beatae, accusantium? Quis, nostrum dolores nisi, rerum odit sunt
-                at veritatis ipsam necessitatibus, error officiis. Similique
-                quod et veniam laudantium. Atque, libero?
+                Welcome to the SHAMIRI RESTful API! This documentation should
+                supply with you all the information you need to start making
+                your HTTP requests to the endpoints. Give our documentation a
+                read before you get started on your project. .
               </p>
             </div>
             <div class="rates">
               <h4>Rate Limit</h4>
               <p>
-                Nulla dictum mauris sit amet massa rutrum, et pharetra enim
-                fringilla. Fusce convallis, metus at cursus tincidunt, tortor
-                tortor mollis nulla, in posuere mi eros et urna. Curabitur
-                pretium tellus at quam porttitor convallis congue ac massa.
-                Phasellus maximus tristique orci. Vivamus eget sagittis libero.
-                Pellentesque elit metus, tempus id vehicula nec, fermentum ut
-                mauris. Proin vel enim commodo, vehicula neque dignissim,
-                lobortis leo.
+                This API is free, I have no intention of creating
+                authentication. However, to prevent harmful activity, there is a
+                rate limit of 10,000 requests a day. If you happen to reach that
+                limit, you will receive a 429 status code, and regain access
+                after 24 hours.
               </p>
-              <p class="example">http://shamiri.institute/resources</p>
 
-              <p>
-                Aliquam id ligula a eros dapibus maximus vitae ac ex. In aliquet
-                commodo velit, commodo blandit leo dignissim ut. Maecenas
-                ultrices arcu sed porttitor vulputate. Proin vitae ex in turpis
-                placerat egestas. Nullam nisl felis, lacinia nec libero in,
-                fermentum faucibus diam. In id nibh tempus, fringilla ante in,
-                blandit lectus. Nulla leo ligula, tempus a arcu ut, placerat
-                ullamcorper nulla. Sed ex neque, feugiat et sem id, tincidunt
-                condimentum elit. Sed pretium felis eu velit commodo accumsan.
-              </p>
+              <h4>Base URL</h4>
+              <p class="example">https://shamiri.institute/resources/api/</p>
             </div>
             <div class="rates">
-              <h4>Base URL</h4>
-              <p class="example">http://shamiri.institute/resources</p>
-              <p>
-                Nulla dictum mauris sit amet massa rutrum, et pharetra enim
-                fringilla. Fusce convallis, metus at cursus tincidunt, tortor
-                tortor mollis nulla, in posuere mi eros et urna. Curabitur
-                pretium tellus at quam porttitor convallis congue ac massa.
-                Phasellus maximus tristique orci. Vivamus eget sagittis libero.
-                Pellentesque elit metus, tempus id vehicula nec, fermentum ut
-                mauris. Proin vel enim commodo, vehicula neque dignissim,
-                lobortis leo.
-              </p>
-              <p class="example">http://shamiri.institute/resources</p>
+              <h3>Data Endpoints</h3>
+              <hr />
 
+              <h5>
+                <span>id</span> - <span>integer</span> -
+                <span>Unique Id per data value</span>
+              </h5>
+              <h5>This id is a unique id for every data in the endpoint</h5>
+              <h4><u>shamiri_2018_pilot_rct</u></h4>
+              <h4>Get all data</h4>
+
+              <p>Contains all data for Shamiri 2018 pilot RCT</p>
+              <p class="example">
+                /shamiri_intervention/shamiri_2018_pilot_rct
+              </p>
+
+              <h4>Get single data</h4>
+              <p>Example request by data id</p>
+              <p class="example">
+                /shamiri_intervention/shamiri_2018_pilot_rct/6
+              </p>
               <div class="example-code">
                 <pre>
                     {
-                        char_id: 1,
-                        name: "Walter White",
-                        birthday: "09-07-1958",
-                        occupation: [
-                            "High School Chemistry Teacher",
-                            "Meth King Pin"
-                        ],
-                        img: "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg",
-                        status: "Deceased",
-                        appearance: [1, 2, 3, 4, 5],
-                        nickname: "Heisenberg",
-                        portrayed: "Bryan Cranston"
+                      "id":6,"time":0,"study_id":"OLY_009","group_leader":"Faith",
+                      "condition":"Control","phq1":"3","phq2":"3","phq3":"3","phq4":"3",
+                      "phq5":"1","phq6":"3","phq7":"3","phq8":"2","phqfunctioning":"2",
+                      "phqtotal":"21","gad1":"3","gad2":"1","gad3":"3","gad4":"1","gad5":"3",
+                      "gad6":"3","gad7":"3","gadfunctioning":"2","gadtotal":"17","msss1":"7",
+                      "msss2":"7","msss3":"7","msss4":"7","msss5":"7","msss6":"6","msss7":"6",
+                      "msss8":"6","msss9":"6","msss10":"7","msss11":"7","msss12":"6","msss0":"7",
+                      "mssfam":"6.75","mssfriends":"6","mssstotal":"6.583333333","age":"16", "form":"2",
+                      "gender":"F","financialstatus":"2","home":"2","tribe":"Luhya",
+                      "personalityq1":"6","personalityq2":"7","personalityq3":"7","personalityq4":"7",
+                      "personalityq5":"7","personalityrq1":"2","personalityrq4":"1","personalitytotal":"24",
+                      "gratitudeq1":"6","gratitudeq2":"2","gratitudeq3":"6","gratitudeq4":"6",
+                      "gratituderg2":"6", "gratituderg4":"2","gratitudetotal":"20","pc1":"3","pc2":"3",
+                      "pc3":"2","pc4":"3","pc5":"1","pc6":"1","pc7":"3","pc8":"0",
+                      "pc9":"3","pc10":"NA","pc11":"3","pc12":"1","pc13":"0","pc14":"3","pc15":"3",
+                      "pc16":"1","pc17":"1","pc18":"3","pc19":"0","pc20":"1","pc21":"1","pc22":"3","pc23":"1",
+                      "pc24":"3","pcr3":"1","pcr5":"2","pcr6":"2","pcr8":"3","pcr10":"NA","pcr12":"2",
+                      "pcr13":"3","pcr16":"2","pcr17":"2","pcr19":"3","pcr21":"2","pcr23":"2","pcrtotal":"58",
+                      "pcracademic":"20","pcrsocial":"19","pcrbehavioral":"19"
                     }
                   </pre
                 >
               </div>
-              <p>
-                Aliquam id ligula a eros dapibus maximus vitae ac ex. In aliquet
-                commodo velit, commodo blandit leo dignissim ut. Maecenas
-                ultrices arcu sed porttitor vulputate. Proin vitae ex in turpis
-                placerat egestas. Nullam nisl felis, lacinia nec libero in,
-                fermentum faucibus diam. In id nibh tempus, fringilla ante in,
-                blandit lectus. Nulla leo ligula, tempus a arcu ut, placerat
-                ullamcorper nulla. Sed ex neque, feugiat et sem id, tincidunt
-                condimentum elit. Sed pretium felis eu velit commodo accumsan.
-              </p>
             </div>
             <div class="rates">
-              <h4>Rate Limit</h4>
-              <p>
-                Nulla dictum mauris sit amet massa rutrum, et pharetra enim
-                fringilla. Fusce convallis, metus at cursus tincidunt, tortor
-                tortor mollis nulla, in posuere mi eros et urna. Curabitur
-                pretium tellus at quam porttitor convallis congue ac massa.
-                Phasellus maximus tristique orci. Vivamus eget sagittis libero.
-                Pellentesque elit metus, tempus id vehicula nec, fermentum ut
-                mauris. Proin vel enim commodo, vehicula neque dignissim,
-                lobortis leo.
-              </p>
-              <p>
-                Aliquam id ligula a eros dapibus maximus vitae ac ex. In aliquet
-                commodo velit, commodo blandit leo dignissim ut. Maecenas
-                ultrices arcu sed porttitor vulputate. Proin vitae ex in turpis
-                placerat egestas. Nullam nisl felis, lacinia nec libero in,
-                fermentum faucibus diam. In id nibh tempus, fringilla ante in,
-                blandit lectus. Nulla leo ligula, tempus a arcu ut, placerat
-                ullamcorper nulla. Sed ex neque, feugiat et sem id, tincidunt
-                condimentum elit. Sed pretium felis eu velit commodo accumsan.
-              </p>
-            </div>
-            <div class="rates">
-              <h4>Rate Limit</h4>
-              <p>
-                Nulla dictum mauris sit amet massa rutrum, et pharetra enim
-                fringilla. Fusce convallis, metus at cursus tincidunt, tortor
-                tortor mollis nulla, in posuere mi eros et urna. Curabitur
-                pretium tellus at quam porttitor convallis congue ac massa.
-                Phasellus maximus tristique orci. Vivamus eget sagittis libero.
-                Pellentesque elit metus, tempus id vehicula nec, fermentum ut
-                mauris. Proin vel enim commodo, vehicula neque dignissim,
-                lobortis leo.
-              </p>
-              <p class="example">http://shamiri.institute/resources</p>
+              <h4><u>Shamiri_2018_all_data</u></h4>
+              <h4>Get all data</h4>
 
-              <p>
-                Aliquam id ligula a eros dapibus maximus vitae ac ex. In aliquet
-                commodo velit, commodo blandit leo dignissim ut. Maecenas
-                ultrices arcu sed porttitor vulputate. Proin vitae ex in turpis
-                placerat egestas. Nullam nisl felis, lacinia nec libero in,
-                fermentum faucibus diam. In id nibh tempus, fringilla ante in,
-                blandit lectus. Nulla leo ligula, tempus a arcu ut, placerat
-                ullamcorper nulla. Sed ex neque, feugiat et sem id, tincidunt
-                condimentum elit. Sed pretium felis eu velit commodo accumsan.
+              <p>Contains all data for Shamiri 2018</p>
+              <p class="example">/shamiri_intervention/shamiri_2018_all_data</p>
+
+              <h4>Get single data</h4>
+              <p>Example request by data id</p>
+              <p class="example">
+                /shamiri_intervention/shamiri_2018_all_data/1
               </p>
+              <div class="example-code">
+                <pre>
+                    {
+                      "id":1,"participantid":"SR_002","phq1":"3","phq2":"0","phq3":"1",
+                      "phq4":"0","phq5":"0","phq6":"1","phq7":"2","phq8":"2","gad1":"0",
+                      "gad2":"0","gad3":"0","gad4":"1","gad5":"1","gad6":"0","gad7":"0",
+                      "msss1":"1","msss2":"4","msss3":"6","msss4":"5","msss5":"5",
+                      "msss6":"3","msss7":"2","msss8":"7","msss9":"5","msss10":"7",
+                      "msss11":"3","msss12":"6","tribe":"Minority","gender":"M",
+                      "school":"Starays","age":"16","school_resources":"Poor"
+                    }
+                  </pre
+                >
+              </div>
+            </div>
+            <div class="rates">
+              <h4><u>shamiri_2019_rct</u></h4>
+              <h4>Get all data</h4>
+              <p>Contains all data for shamiri RCT 2019</p>
+              <p class="example">/shamiri_intervention/shamiri_2019_rct</p>
+
+              <h4>Get single data</h4>
+              <p>Example request by data id</p>
+              <p class="example">/shamiri_intervention/shamiri_2019_rct/1</p>
+            </div>
+            <div class="rates">
+              <h4><u>shamiri_2019_all_data</u></h4>
+              <h4>Get all data</h4>
+              <p>Contains all data for shamiri 2019</p>
+              <p class="example">/shamiri_intervention/shamiri_2019_all_data</p>
+
+              <h4>Get single data</h4>
+              <p>Example request by data id</p>
+              <p class="example">
+                /shamiri_intervention/shamiri_2019_all_data/1
+              </p>
+            </div>
+            <div class="rates">
+              <h4><u> shamiri_2019_single_session_pilot_RCT</u></h4>
+              <h4>Get all data</h4>
+
+              <p>Contains all data for shamiri_2019_single_session_pilot_RCT</p>
+              <p class="example">
+                /shamiri_intervention/shamiri_2019_single_session_pilot_RCT
+              </p>
+
+              <h4>Get single data</h4>
+              <p>Example request by data id</p>
+              <p class="example">
+                /shamiri_intervention/shamiri_2019_single_session_pilot_RCT/1
+              </p>
+              <div class="example-code">
+                <pre>
+                    {
+                      "id":1,"time":1,"signed":"1","class":"A","school":"KDSS",
+                      "participant_id":"7000","group_leader":"Patricia","condition":"Values",
+                      "gad_1":"1","gad_2":"0","gad_3":"1","gad_4":"0","gad_5":"2","gad_6":"2",
+                      "gad_7":"2","gad_functioning":"0","phq_1":"2","phq_2":"1","phq_3":"0",
+                      "phq_4":"1","phq_5":"0","phq_6":"2","phq_7":"2","phq_8":"1","phq_functioning":"2",
+                      "epoch_happiness_1":"2","epoch_happiness_2":"1","epoch_happiness_3":"5",
+                      "epoch_happiness_4":"2","age":"15","form":"1","gender":"2","financial_status":"2"
+                    }
+                  </pre
+                >
+              </div>
+            </div>
+            <div class="rates">
+              <h4><u>shamiri_2019_digital_pilot_RCT</u></h4>
+              <h4>Get all data</h4>
+
+              <p>Contains all data for shamiri_2019_digital_pilot_RCT</p>
+              <p class="example">
+                /shamiri_intervention/shamiri_2019_digital_pilot_RCT
+              </p>
+
+              <h4>Get single data</h4>
+              <p>Example request by data id</p>
+              <p class="example">
+                /shamiri_intervention/shamiri_2019_digital_pilot_RCT/1
+              </p>
+              <div class="example-code">
+                <pre>
+                    {
+                      "id":1,"time":0,"study_id":"1WALGGRWF8GALJWUP9GZCN","condition":"Intervention",
+                      "phq_1":"0","phq_2":"3","phq_3":"1","phq_4":"0","phq_5":"3","phq_6":"3",
+                      "phq_7":"3","phq_8":"1","gad_1":"1","gad_2":"1","gad_3":"3","gad_4":"0",
+                      "gad_5":"3","gad_6":"1","gad_7":"1","happiness_1":"2","happiness_2":"2",
+                      "happiness_3":"2","happiness_4":"3","optimism_1":"1","optimism_2":"3",
+                      "optimism_3":"3","optimism_4":"2","swemwbs_1":"2","swemwbs_2":"4",
+                      "swemwbs_3":"1","swemwbs_4":"2","swemwbs_5":"2","swemwbs_6":"2",
+                      "swemwbs_7":"4","age":"15","form":"1","gender":"F"
+                    }
+                  </pre
+                >
+              </div>
             </div>
           </div>
         </main>
