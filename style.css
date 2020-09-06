@@ -41,6 +41,7 @@ p {
   margin-left: 2%;
   background: #fff;
   color: #000;
+  border-radius: 5px;
 }
 
 pre {
@@ -165,6 +166,18 @@ footer {
   color: #3b3b3b;
   font-weight: 700;
 }
+.bar {
+  margin: 4px 0;
+}
+.bar:hover,
+.bar:focus {
+  border-bottom: 3px solid #1571bc;
+  padding: 1px 2px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .footer-wrap li a:hover {
   border-bottom: 3px solid #1571bc;
   padding: 1px 2px;
