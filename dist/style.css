@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .a,
 .b {
@@ -156,10 +159,22 @@ footer {
 .footer-wrap > div {
   flex: 1;
 }
+#pointed:hover a,
+#pointed:focus a,
+.company:focus a,
+.company:hover a {
+  cursor: default;
+  border-bottom: none;
+}
 
+.footer-wrap h4 {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 700;
+}
 .footer-wrap li {
   list-style-type: none;
-  margin: 1.5rem;
+  margin: 1.1rem;
 }
 .footer-wrap li a {
   text-decoration: none;
@@ -244,7 +259,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .logo img {
     width: 80px;
@@ -275,7 +290,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .logo img {
     width: 80px;
