@@ -132,7 +132,6 @@ hr {
 .sidebar {
   background: #113f5d;
   flex: 0 0 17em;
-  /* color: #808486; */
   color: #e6e6e6;
 }
 
@@ -183,14 +182,15 @@ footer {
 }
 .bar {
   margin: 4px 0;
+  transition: all 0.3s ease-in-out;
 }
 .bar:hover,
 .bar:focus {
-  border-bottom: 3px solid #1571bc;
-  padding: 1px 2px;
+  background-color: #ececec;
+  color: #111;
   font-weight: 800;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-wrap li a:hover {
