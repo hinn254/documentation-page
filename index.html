@@ -45,7 +45,7 @@
               </p>
             </div>
             <div class="rates">
-              <h4>Rate Limit</h4>
+              <h4 id="rate-limit">Rate Limit</h4>
               <p>
                 This API is free, We have no intention of creating
                 authentication. However, to prevent harmful activity, there is a
@@ -68,7 +68,7 @@
                 <span>Unique Id per data value</span>
               </h5>
               <h5>This id is a unique id for every data in the endpoint</h5>
-              <h4><u>shamiri_2018_pilot_rct</u></h4>
+              <h4><u id="shamiri_2018_pilot_rct">shamiri_2018_pilot_rct</u></h4>
               <h4>Get all data</h4>
 
               <p>Contains all data for Shamiri 2018 pilot RCT</p>
@@ -109,7 +109,7 @@
               </div>
             </div>
             <div class="rates">
-              <h4><u>Shamiri_2018_all_data</u></h4>
+              <h4><u id="shamiri_2018_all_data">Shamiri_2018_all_data</u></h4>
               <h4>Get all data</h4>
 
               <p>Contains all data for Shamiri 2018</p>
@@ -136,7 +136,7 @@
               </div>
             </div>
             <div class="rates">
-              <h4><u>shamiri_2019_rct</u></h4>
+              <h4><u id="shamiri_2019_rct">shamiri_2019_rct</u></h4>
               <h4>Get all data</h4>
               <p>Contains all data for shamiri RCT 2019</p>
               <p class="example">/shamiri_intervention/shamiri_2019_rct</p>
@@ -146,7 +146,7 @@
               <p class="example">/shamiri_intervention/shamiri_2019_rct/1</p>
             </div>
             <div class="rates">
-              <h4><u>shamiri_2019_all_data</u></h4>
+              <h4><u id="shamiri_2019_all_data">shamiri_2019_all_data</u></h4>
               <h4>Get all data</h4>
               <p>Contains all data for shamiri 2019</p>
               <p class="example">/shamiri_intervention/shamiri_2019_all_data</p>
@@ -158,7 +158,11 @@
               </p>
             </div>
             <div class="rates">
-              <h4><u> shamiri_2019_single_session_pilot_RCT</u></h4>
+              <h4>
+                <u id="shamiri_2019_single_session">
+                  shamiri_2019_single_session_pilot_RCT</u
+                >
+              </h4>
               <h4>Get all data</h4>
 
               <p>Contains all data for shamiri_2019_single_session_pilot_RCT</p>
@@ -187,7 +191,11 @@
               </div>
             </div>
             <div class="rates">
-              <h4><u>shamiri_2019_digital_pilot_RCT</u></h4>
+              <h4>
+                <u id="shamiri_2019_digital_pilot"
+                  >shamiri_2019_digital_pilot_RCT</u
+                >
+              </h4>
               <h4>Get all data</h4>
 
               <p>Contains all data for shamiri_2019_digital_pilot_RCT</p>
@@ -220,15 +228,30 @@
         </main>
         <div class="sidebar">
           <h2>Introduction</h2>
-          <p class="bar">Rate limit</p>
-          <p class="bar">Base URL</p>
+          <p class="bar"><a href="#rate-limit">Rate Limit</a></p>
+          <p class="bar"><a href="#baseurl">Base URL</a></p>
 
           <h2>Data Endpoints</h2>
-          <p class="bar">shamiri_2018_pilot_rct</p>
-          <p class="bar">shamiri_2018_all_data</p>
-          <p class="bar">shamiri_2019_rct</p>
-          <p class="bar">shamiri_2019_single_session</p>
-          <p class="bar">shamiri_2019_digital_pilot</p>
+          <p class="bar">
+            <a href="#shamiri_2018_pilot_rct">shamiri_2018_pilot_rct</a>
+          </p>
+          <p class="bar">
+            <a href="#shamiri_2018_all_data">shamiri_2018_all_data</a>
+          </p>
+          <p class="bar"><a href="#shamiri_2019_rct">shamiri_2019_rct</a></p>
+          <p class="bar">
+            <a href="#shamiri_2019_all_data">shamiri_2019_all_data</a>
+          </p>
+
+          <p class="bar">
+            <a href="#shamiri_2019_single_session"
+              >shamiri_2019_single_session</a
+            >
+          </p>
+
+          <p class="bar">
+            <a href="#shamiri_2019_digital_pilot">shamiri_2019_digital_pilot</a>
+          </p>
         </div>
       </div>
       <footer>
@@ -238,23 +261,46 @@
             <img src="img/shamiri_logo.png" alt="shamiri_logo" />
           </div>
           <div class="platform">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press</a></li>
+            <h4>Connect with us</h4>
+            <ul id="pointed">
+              <li><a href="#email-us">Email: team@shamiri.institute</a></li>
+              <li><a href="#call-us-US">Phone (US): +1 617 669 7297</a></li>
+              <li><a href="#call-us-KE">Phone (KEN): +254 756 121145</a></li>
+            </ul>
           </div>
           <div class="support">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press</a></li>
+            <h4>Get to know us</h4>
+            <ul>
+              <li><a href="https://shamiri.institute/about/">Who We Are</a></li>
+              <li>
+                <a href="https://shamiri.institute/leadership-staff/"
+                  >Our Leadership</a
+                >
+              </li>
+              <li>
+                <a href="https://shamiri.institute/projects/project-thrive/"
+                  >Project Thrive!</a
+                >
+              </li>
+              <li>
+                <a href="https://shamiri.institute/resources/"
+                  >Resources & Papers</a
+                >
+              </li>
+              <li><a href="https://shamiri.institute/join-us/">Join Us</a></li>
+            </ul>
           </div>
           <div class="company">
+            <h4>Our mission</h4>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Press</a></li>
+              <li>
+                <a href="#our-mission"
+                  >Shamiri Institute INC, is a non-profit organization whose
+                  mission is to provide youths in Sub Saharan Africa, and
+                  beyond, with the tools that they need to improve their life
+                  outcomes.</a
+                >
+              </li>
             </ul>
           </div>
         </div>
